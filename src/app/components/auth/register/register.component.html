@@ -1,0 +1,54 @@
+<div class="register-container">
+    <div class="register-header">
+      <img src="assets/images/logo.png" alt="Logo" class="logo">
+      <h2>Crea una Cuenta</h2>
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+      <div class="row" style="margin-left: 0.9rem;">
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input id="username" type="text" formControlName="username" placeholder="Username" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <input id="email" type="email" formControlName="email" placeholder="Email" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-left: 0.9rem;">
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="fas fa-lock"></i>
+            <input id="password" type="password" formControlName="password" placeholder="Password" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="fas fa-lock"></i>
+            <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Confirm Password" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-left: 0.9rem;">
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <input id="phone" type="text" formControlName="phone" placeholder="Phone" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <i class="fas fa-address-card"></i>
+            <input id="address" type="text" formControlName="address" placeholder="Address" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="btn1">
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </form>
+  </div>
+  
